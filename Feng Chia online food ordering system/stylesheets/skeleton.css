@@ -236,3 +236,6 @@
       clear: both;
       
     }
+    ul li {
+        list-style-image:url('../images/arrow.png');
+    }

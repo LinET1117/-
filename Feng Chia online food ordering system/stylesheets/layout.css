@@ -197,6 +197,9 @@ li [class^="icon-"], li [class*=" icon-"] {
   width: 1.25em;
   text-align: center;
 }
+li {
+  list-style-image:url('../images/arrow.png');
+}
 li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
   /* 1.5 increased font size for icon-large * 1.25 width */
 
