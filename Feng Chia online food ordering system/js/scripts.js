@@ -1,17 +1,6 @@
-/**
- * icebrrrg.js
- * 
- * The main javascript for Icebrrrg.
- * 
- * Copyright 2012 Opendesigns.
- * http://www.opendesigns.org/design/icebrrrg/
- * 
- */
-
 jQuery(document).ready(function(){
 	
-	
-	
+
 /* FLEX SLIDER */
 	var $flexSlider = $('.flexslider');
 	$flexSlider.flexslider({
