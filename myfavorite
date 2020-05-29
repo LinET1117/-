@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+
+    <!-- 頁面title
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>會員登入</title>
+
+    <!-- 響應式
+  ================================================== -->
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1,maximum-scale=1">
+                  <!--畫面寬度，畫面初始縮放比例，畫面初始最大縮放比例-->
+    
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/skeleton.css">
+    <link rel="stylesheet" href="stylesheets/layout.css">
+
+    <!-- JS
+  ================================================== -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!-- 網頁icon
+	================================================== -->
+  <link rel="shortcut icon" href="images/arrow.png">
+  <link rel="apple-touch-icon" href="images/arrow.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="images/arrow.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="images/arrow.png">
+
+  </head>
+
+  <body>
+    
+    <div class="bg">
+      <img src="images\back.jpg">
+    </div>
+
+  </body>
+
+ </html>
