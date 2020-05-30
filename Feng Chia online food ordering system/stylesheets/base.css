@@ -41,7 +41,7 @@
 ================================================== */
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "微軟正黑體","Georgia", "Times New Roman", serif;
+		font-family: "Microsoft JhengHei","Georgia", "Times New Roman", serif;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
@@ -57,7 +57,7 @@
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #333; }
+	strong { font-family:Microsoft JhengHei; font-weight: bold; color: #333; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
