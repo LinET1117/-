@@ -82,8 +82,7 @@
 
         <div id="message"></div>
 
-        <form method="post" action="contact.php" name="contactform"
-          id="contactform">
+        <form action="actionpage.php">
 
           <fieldset>
 
@@ -107,10 +106,9 @@
             <input name="password" type="password" placeholder="請輸入密碼" id="password" size="30" value="" required />
 
             <br />
-            <input type="submit" class="btn" id="login" value="登入" />
+            <button type="submit" class="rebtn">登入</button>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="button" class="btn" id="register" value="註冊" onclick="location.href='register.html'" />
-            
+            <button type="button" class="rebtn" onclick="location.href='register.html'">註冊</button>
           </fieldset>
 
         </form>
