@@ -263,6 +263,17 @@ hr {
   opacity: 0.9;
 }
 
+.rbtn {
+  background-color: rgb(38, 224, 13);
+  color: white;
+  padding: 16px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
 .btn {
   background-color: rgb(18, 137, 216);
   color: white;

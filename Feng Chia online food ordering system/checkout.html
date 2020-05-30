@@ -71,10 +71,12 @@
       </div>
     </header>
 
+    <form action="action_page.php">
+
     <div class="container">
 
       <div class="tagline">
-        <p><b><strong><img src="images/checklist.ico">我的訂單</strong></b></p>
+        <p><b><strong><img src="images/warning.ico">確認您的訂單</strong></b></p>
       </div>
 
         <nav id="main-nav1" class="two-third thirds column omega">
@@ -158,12 +160,12 @@
                       </div>
                       </nav>
   
-
-
-     
     </div>
-<center><button type="button" class="rebtn" onclick="location.href='checkout.html'">去結帳!</button></center>
-   
+<center><button type="submit" class="rbtn" onclick="if(confirm('確認要送出本訂單嗎？')) this.form.submit();" >送出訂單!</button></center>
+  
+</form>
+    
+
     <footer>
       
       <div id="footer-base">
