@@ -67,45 +67,14 @@ footer {background: #d0ebfd; border-top: 1px solid #afdfff; }
 .social a { text-decoration: none; font-size: 1.2em; color: #003c67; }
 .social a:hover { color: #2c88c9; }
 
-/* #Page Styles
-================================================== */
-
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {}
-
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {}
-
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {}
-
-
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root,
-		copy your FontName into code below and remove
-		comment brackets */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
 
 /* #Slider
 ============================================== */
@@ -117,27 +86,6 @@ footer {background: #d0ebfd; border-top: 1px solid #afdfff; }
 .flex-direction-nav { display: none; position: absolute; width: 100%; top: 50%; margin-top: -25px; display: block	9; }
 
 /*  Font Awesome
-    the iconic font designed for use with Twitter Bootstrap
-    -------------------------------------------------------
-    The full suite of pictographic icons, examples, and documentation
-    can be found at: http://fortawesome.github.com/Font-Awesome/
-
-    License
-    -------------------------------------------------------
-    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-    http://creativecommons.org/licenses/by/3.0/ A mention of
-    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-    source code is considered acceptable attribution (most common on the web).
-    If human readable source code is not available to the end user, a mention in
-    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-    or mobile software).
-
-    Contact
-    -------------------------------------------------------
-    Email: dave@davegandy.com
-    Twitter: http://twitter.com/fortaweso_me
-    Work: http://lemonwi.se co-founder
-
 ============================================== */
 
 @font-face {
@@ -162,13 +110,13 @@ a [class^="icon-"], a [class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit;
 }
-/* makes the font 33% larger relative to the icon container */
+
 .icon-large:before {
   vertical-align: top;
   font-size: 1.3333333333333333em;
 }
 .btn [class^="icon-"], .btn [class*=" icon-"] {
-  /* keeps button heights with and without icons the same */
+
 
   line-height: .9em;
 }
@@ -181,8 +129,6 @@ li {
   list-style-image:url('../images/arrow.png');
 }
 li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
-  /* 1.5 increased font size for icon-large * 1.25 width */
-
   width: 1.875em;
 }
 li[class^="icon-"], li[class*=" icon-"] {
@@ -200,10 +146,8 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 /*  Contact Form
     ------------------------------------------------------- */
 
-
 #contact h1 { margin: 10px 0 10px; font-size: 24px; color: #333333; }
 #contact hr { color: inherit; height: 0; margin: 6px 0 6px 0; padding: 0; border: 1px solid #d9d9d9; border-style: none none solid; }
-
 #contact { display: block; width: 650px; margin: 50px auto; padding: 35px; border: 1px solid #cbcbcb; background-color: #FFF;   }
 
 /* Form style */
@@ -216,20 +160,16 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 #contact input[type="submit"][disabled] { background:#888; }
 #contact fieldset { padding:20px; border:1px solid #eee;  }
 #contact legend { padding:7px 10px; font-weight:bold; color:#000; border:1px solid #eee;  margin-bottom:0 !important; margin-bottom:20px; }
-
 #contact span.required{ font-size: 13px; color: #ff0000; } /* Select the colour of the * if the field is required. */
-
 .verify-this, input[type="text"] .verify-this { display: inline !important; }
-
 #message { margin: 10px 0; padding: 0; }
-
 .error_message { display: block; height: 22px; line-height: 22px; background: #FBE3E4 url('../assets/error.gif') no-repeat 10px center; padding: 3px 10px 3px 35px; color:#8a1f11;border: 1px solid #FBC2C4; }
-
 .loader { padding: 0 10px; }
-
 #contact #success_page h1 { background: url('../assets/success.gif') left no-repeat; padding-left:22px; }
-
 acronym { border-bottom:1px dotted #ccc; }
+
+/*  按鈕
+    ------------------------------------------------------- */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -267,7 +207,6 @@ acronym { border-bottom:1px dotted #ccc; }
   width: 100%;
   font-size: 18px;
 }
-
 
 .card button:hover {
   opacity: 0.7;
