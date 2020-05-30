@@ -91,7 +91,7 @@
 
             <br />
             <label for="subject" accesskey="S"><li>登入身分</li></label>
-            <select name="subject" id="subject">
+            <select name="subject" id="subject" required>
               <option value="customer">客人</option>
               <option value="owner">店家</option>
             </select>
@@ -99,18 +99,18 @@
             <br />
             <label for="email" accesskey="E"><span class="required"></span>
               <li>帳號</li></label>
-            <input name="email" type="text" id="email" size="30" value="" />
+            <input name="email" type="text" placeholder="請輸入電子郵件帳號" id="email" size="30" value="" required/>
 
             <br />
             <label for="password" accesskey="P"><span class="required"></span>
               <li>密碼</li></label>
-            <input name="password" type="password" id="password" size="30" value="" />
+            <input name="password" type="password" placeholder="請輸入密碼" id="password" size="30" value="" required />
 
             <br />
-            <input type="submit" class="submit" id="login" value="登入" />
+            <input type="submit" class="btn" id="login" value="登入" />
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="submit" class="submit" id="register" value="註冊" onclick="register.html" />
-          
+            <input type="button" class="btn" id="register" value="註冊" onclick="location.href='register.html'" />
+            
           </fieldset>
 
         </form>
