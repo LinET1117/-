@@ -1,0 +1,31 @@
+<html> 
+<head> 
+<script> 
+/* On load of the page we are calling this function which will 
+give us the color name stored in our local storage */ 
+     function changeColor() { 
+      var color = localStorage.getItem("colorName"); 
+      document.getElementById("color").style.backgroundColor = color; 
+     } 
+/*This function will change the color of button on click*/ 
+     var i = -1; 
+     function colorArray() { 
+      var arr = new Array(); 
+      arr[0] = "Red"; 
+      arr[1] = "Gray"; 
+      i++; 
+      if (i > arr.length - 1) { 
+       i = 0; 
+      } 
+
+      localStorage.setItem("colorName", arr[i]); 
+      document.getElementById("color").style.backgroundColor = arr[i]; 
+     } 
+    </script> 
+</head> 
+
+<body onload="changeColor()"> 
+    <button onclick="colorArray()" id="color"> Change Color </button> 
+</body> 
+
+</html> 

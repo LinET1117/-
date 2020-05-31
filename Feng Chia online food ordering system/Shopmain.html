@@ -30,13 +30,36 @@
   <link rel="apple-touch-icon" sizes="72x72" href="images/logo icon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="images/logo icon.ico">
 
+
+  <script> 
+/* On load of the page we are calling this function which will 
+give us the color name stored in our local storage */ 
+     function changeColor() { 
+      var color = localStorage.getItem("colorName"); 
+      document.getElementById("color").style.backgroundColor = color; 
+     } 
+/*This function will change the color of button on click*/ 
+     var i = -1; 
+     function colorArray() { 
+      var arr = new Array(); 
+      arr[0] = "Red"; 
+      arr[1] = "Gray"; 
+      i++; 
+      if (i > arr.length - 1) { 
+       i = 0; 
+      } 
+
+      localStorage.setItem("colorName", arr[i]); 
+      document.getElementById("color").style.backgroundColor = arr[i]; 
+     } 
+    </script> 
   </head>
 
   <div class="bg">
     <img src="images\back.jpg">
   </div>
 
-  <body class="wrap">
+  <body class="wrap" onload="changeColor()">
 
     <header id="header" class="site-header" role="banner">
       <div id="header-inner" class="container sixteen columns over">
@@ -74,7 +97,7 @@
 
           <h1>炸醬麵</h1>
           <p class="price">$60</p>
-          <p class="card2"><button>完成訂單</button></p>
+          <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
         </div>
         </nav>
 
@@ -82,49 +105,49 @@
           <div class="card">
             <h1>炸醬麵</h1>
             <p class="price">$60</p>
-            <p class="card2"><button>完成訂單</button></p>
+            <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
           </div>
           </nav>
           <nav id="main-nav3" class="two-third thirds column omega">
             <div class="card">
               <h1>炸醬麵</h1>
               <p class="price">$60</p>
-              <p class="card2"><button>完成訂單</button></p>
+              <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
             </div>
             </nav>
             <nav id="main-nav4" class="two-third thirds column omega">
               <div class="card">
                 <h1>炸醬麵</h1>
                 <p class="price">$60</p>
-                <p class="card2"><button>完成訂單</button></p>
+                <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
               </div>
               </nav>
               <nav id="main-nav5" class="two-third thirds column omega">
                 <div class="card">
                   <h1>炸醬麵</h1>
                   <p class="price">$60</p>
-                  <p class="card2"><button>完成訂單</button></p>
+                  <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
                 </div>
                 </nav>
                 <nav id="main-nav6" class="two-third thirds column omega">
                   <div class="card">
                     <h1>炸醬麵</h1>
                     <p class="price">$60</p>
-                    <p class="card2"><button>完成訂單</button></p>
+                    <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
                   </div>
                   </nav>
                   <nav id="main-nav7" class="two-third thirds column omega">
                     <div class="card">
                       <h1>炸醬麵</h1>
                       <p class="price">$60</p>
-                      <p class="card2"><button>完成訂單</button></p>
+                      <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
                     </div>
                     </nav>
                     <nav id="main-nav8" class="two-third thirds column omega">
                       <div class="card">
                         <h1>炸醬麵</h1>
                         <p class="price">$60</p>
-                        <p class="card2"><button>完成訂單</button></p>
+                        <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
                       </div>
                       </nav>
   
