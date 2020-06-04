@@ -85,13 +85,15 @@
             <a>
               <class="scale-with-grid" alt="Random Iceberg Photo">
                 {{each Comments}}
-                <table width="600" border="1">
-                  <tr>
+                <table width="600" id="main-nav3">
+                  <tr class="card">
                     <td>{{ $number }}</td>
                     <td>{{ $name }}</td>
                     <td>{{ $price}}</td>
-                    <td><button>修改</button></td>
-                    <td><button>移除</button></td>
+                    <td><div class="card1"><button>修改</button></td></div>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><div class="card2"><button>移除</button></td></div>
+                    <td>&nbsp;&nbsp;</td>
                   </tr>
                 </table>
 
