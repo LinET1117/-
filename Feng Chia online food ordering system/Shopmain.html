@@ -29,30 +29,15 @@
   <link rel="apple-touch-icon" href="images/logo icon.ico">
   <link rel="apple-touch-icon" sizes="72x72" href="images/logo icon.ico">
   <link rel="apple-touch-icon" sizes="114x114" href="images/logo icon.ico">
-
-
-  <script> 
-/* On load of the page we are calling this function which will 
-give us the color name stored in our local storage */ 
-     function changeColor() { 
-      var color = localStorage.getItem("colorName"); 
-      document.getElementById("color").style.backgroundColor = color; 
-     } 
-/*This function will change the color of button on click*/ 
-     var i = -1; 
-     function colorArray() { 
-      var arr = new Array(); 
-      arr[0] = "Gray"; 
-      arr[1] = "Red"; 
-      i++; 
-      if (i > arr.length - 1) { 
-       i = 0; 
-      } 
-
-      localStorage.setItem("colorName", arr[i]); 
-      document.getElementById("color").style.backgroundColor = arr[i]; 
-     } 
-    </script> 
+      <script>
+        function chcolor(){
+          style="background-color: aliceblue;"
+        }
+      </script>
+  <style>
+    
+  </style>
+  
   </head>
 
   <div class="bg">
@@ -92,26 +77,24 @@ give us the color name stored in our local storage */
         <p><b><strong><img src="images/checklist.ico">訂單列表</strong></b></p>
       </div>
 
-      <nav id="main-nav1" class="two-third thirds column omega">
-        <div class="card">
+      <class id="scale-with-grid" alt="Random Iceberg Photo">
+        {{each Comments}}
+        <table width="800" >
+          <tr class="card">
+            <td>{{ $number }}</td>
+            <td>{{ $name }}</td>
+            <td>{{ $price }}</td>
+            <td>{{ $comment }}</td>
+            <td><input type="button" value="完成"></td>
+            <td>&nbsp;&nbsp;</td>
+          </tr>
+        </table>
 
-          <h1>炸醬麵</h1>
-          <p class="price">$60</p>
-          <p class="card2"><button onclick="colorArray()" id="color">完成訂單</button></p>
-        </div>
-      </nav>
-
-      <nav id="main-nav2" class="two-third thirds column omega">
-        <div class="card">
-
-          <h1>炸醬麵</h1>
-          <p class="price">$60</p>
-          <p class="card2"><button onclick="colorArray()" id="color2">完成訂單</button></p>
-        </div>
-      </nav>
+        {{/each}}
+      </class>
      
     </div>
-
+    <a href="#top" target="#top">返回頂部</a>
 
     <footer>
       

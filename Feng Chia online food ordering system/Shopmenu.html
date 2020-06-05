@@ -5,7 +5,7 @@
     <!-- 頁面title
   ================================================== -->
     <meta charset="utf-8">
-    <title>我的訂單</title>
+    <title>我的菜單</title>
 
     <!-- 響應式
   ================================================== -->
@@ -68,45 +68,27 @@
   ================================================== -->
     <div class="container">
 
-      <div class="sixteen columns">
+      <div class="tagline">
+        <p><b><strong><img src="images/food.ico">菜單</strong></b></p>
+      </div>
+
+      <class id="scale-with-grid" alt="Random Iceberg Photo"/>
+        {{each Comments}}
+        <table width="800" id="main-nav3">
+          <tr class="card">
+            <td>{{ $number }}</td>
+            <td>{{ $name }}</td>
+            <td>{{ $price}}</td>
+            <td><input type="button" value="修改"></td>
+            <td ><input type="button" value="移除"></td>
+          </tr>
+          
+        </table>
+        
+        {{/each}}
+      </class>
 
 
-
-        <div class="tagline">
-          <p><b><strong><img src="images/food.ico">菜單</strong></b></p>
-        </div>
-
-      </div><!-- container -->
-
-      <section class="container">
-
-        <article id="photo-item-1" class="feature-column one-third column">
-          <div class="featured-image img-wrapper">
-            <a>
-              <class id="scale-with-grid" alt="Random Iceberg Photo">
-                {{each Comments}}
-                <table width="600" id="main-nav3">
-                  <tr class="card">
-                    <td>{{ $number }}</td>
-                    <td>{{ $name }}</td>
-                    <td>{{ $price}}</td>
-                    <td><div class="card1"><button>修改</button></div></td>
-                    <td>&nbsp;&nbsp;</td>
-                    <td><div class="card2"><button>移除</button></div></td>
-                    <td>&nbsp;&nbsp;</td>
-                  </tr>
-                </table>
-
-                {{/each}}
-              </class>
-            </a>
-          </div>
-        </article>
-      
-      
-      </section><!-- container -->
-
-      <hr>
 
     </div>
     <a href="#top" target="#top">返回頂部</a>
