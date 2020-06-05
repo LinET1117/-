@@ -74,86 +74,33 @@
         <p><b><strong><img src="images/warning.ico">確認您的訂單</strong></b></p>
       </div>
 
-        <nav id="main-nav1" class="two-third thirds column omega">
-        <div class="card">
+      <section class="container">
 
-          <h1>炸醬麵</h1>
-          <p class="price">$60</p>
-            <div class="card2">
-            <p><button >從訂單中刪除</button></p>
-            </div>
-        </div>
-        </nav>
+        <article id="photo-item-1" class="feature-column one-third column">
+          <div class="featured-image img-wrapper">
+            <a>
+              <class id="scale-with-grid" alt="Random Iceberg Photo">
+                {{each Comments}}
+                <table width="600" id="main-nav3">
+                  <tr class="card">
+                    <td>{{ $number }}</td>
+                    <td>{{ $name }}</td>
+                    <td>{{ $price}}</td>
+                    <td><div class="card1"><button>修改</button></div></td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><div class="card2"><button>移除</button></div></td>
+                    <td>&nbsp;&nbsp;</td>
+                  </tr>
+                </table>
 
-        <nav id="main-nav2" class="two-third thirds column omega">
-          <div class="card">
-            <h1>炸醬麵</h1>
-            <p class="price">$60</p>
-            <div class="card2">
-            <p><button >從訂單中刪除</button></p>
-            </div>
+                {{/each}}
+              </class>
+            </a>
           </div>
-          </nav>
-
-        <nav id="main-nav3" class="two-third thirds column omega">
-          <div class="card">
-            <h1>炸醬麵</h1>
-            <p class="price">$60</p>
-            <div class="card2">
-            <p><button >從訂單中刪除</button></p>
-            </div>
-          </div>
-          </nav>
-
-            <nav id="main-nav4" class="two-third thirds column omega">
-              <div class="card">
-                <h1>炸醬麵</h1>
-                <p class="price">$60</p>
-                <div class="card2">
-                <p><button >從訂單中刪除</button></p>
-                </div>
-              </div>
-              </nav>
-
-              <nav id="main-nav5" class="two-third thirds column omega">
-                <div class="card">
-                  <h1>炸醬麵</h1>
-                  <p class="price">$60</p>
-                  <div class="card2">
-                  <p><button >從訂單中刪除</button></p>
-                  </div>
-                </div>
-                </nav>
-
-                <nav id="main-nav6" class="two-third thirds column omega">
-                  <div class="card">
-                    <h1>炸醬麵</h1>
-                    <p class="price">$60</p>
-                    <div class="card2">
-                    <p><button >從訂單中刪除</button></p>
-                    </div>
-                  </div>
-                  </nav>
-
-                  <nav id="main-nav7" class="two-third thirds column omega">
-                    <div class="card">
-                      <h1>炸醬麵</h1>
-                      <p class="price">$60</p>
-                      <div class="card2">
-                      <p><button >從訂單中刪除</button></p>
-                      </div>
-                    </div>
-                    </nav>
-
-                    <nav id="main-nav8" class="two-third thirds column omega">
-                      <div class="card">
-                        <h1>炸醬麵</h1>
-                        <p class="price">$60</p>
-                        <div class="card2">
-                        <p><button >從訂單中刪除</button></p>
-                        </div>
-                      </div>
-                      </nav>
+        </article>
+      
+      
+      </section><!-- container -->  
   
     </div>
 <center><button type="submit" class="rbtn" onclick="if(confirm('確認要送出本訂單嗎？')) this.form.submit();" >送出訂單!</button></center>
