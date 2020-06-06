@@ -78,72 +78,19 @@
 
         <img src="images/傻瓜麵.jpg" class="scale-with-grid">
 
-
+        {{each Comments}}
         <nav id="main-nav1" class="two-third thirds column omega">
         <div class="card">
 
-          <h1>炸醬麵</h1>
-          <p class="price">$60</p>
+          <h1>{{ $name }}</h1>
+          <p class="price">{{ $price }}</p>
           <p><button>加入購物車</button></p>
             <div class="card2">
             <p><button >加入我的最愛</button></p>
             </div>
         </div>
         </nav>
-
-        <nav id="main-nav2" class="two-third thirds column omega">
-          <div class="card">
-            <h1>炸醬麵</h1>
-            <p class="price">$60</p>
-            <p><button>加入購物車</button></p>
-            <div class="card2">
-              <p><button >加入我的最愛</button></p>
-              </div>
-          </div>
-          </nav>
-          <nav id="main-nav3" class="two-third thirds column omega">
-            <div class="card">
-              <h1>炸醬麵</h1>
-              <p class="price">$60</p>
-              <p><button>加入購物車</button></p>
-              <div class="card2">
-                <p><button >加入我的最愛</button></p>
-                </div>
-            </div>
-            </nav>
-            <nav id="main-nav4" class="two-third thirds column omega">
-              <div class="card">
-                <h1>炸醬麵</h1>
-                <p class="price">$60</p>
-                <p><button>加入購物車</button></p>
-              <div class="card2">
-                <p><button >加入我的最愛</button></p>
-              </div>
-              </div>
-              </nav>
-              <nav id="main-nav5" class="two-third thirds column omega">
-                <div class="card">
-                  <h1>炸醬麵</h1>
-                  <p class="price">$60</p>
-                  <p><button>加入購物車</button></p>
-                  <div class="card2">
-                    <p><button >加入我的最愛</button></p>
-                    </div>
-                </div>
-                </nav>
-                <nav id="main-nav6" class="two-third thirds column omega">
-                  <div class="card">
-                    <h1>炸醬麵</h1>
-                    <p class="price">$60</p>
-                    <p><button>加入購物車</button></p>
-                    <div class="card2">
-                      <p><button >加入我的最愛</button></p>
-                      </div>
-                  </div>
-                  </nav>
-  
-
-
+        {{/each}}
       </article>
       <!-- End main Content -->
 
