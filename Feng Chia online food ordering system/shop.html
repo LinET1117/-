@@ -78,19 +78,32 @@
 
         <img src="images/傻瓜麵.jpg" class="scale-with-grid">
 
-        {{each Comments}}
-        <nav id="main-nav1" class="two-third thirds column omega">
-        <div class="card">
+        <section class="container">
 
-          <h1>{{ $name }}</h1>
-          <p class="price">{{ $price }}</p>
-          <p><button>加入購物車</button></p>
-            <div class="card2">
-            <p><button >加入我的最愛</button></p>
+          <article id="photo-item-1" class="feature-column one-third column">
+            <div class="featured-image img-wrapper">
+              <a>
+                <class id="scale-with-grid" alt="Random Iceberg Photo">
+                  {{each Comments}}
+                  <table width="600" id="main-nav3">
+                    <tr class="card">
+                      <td>{{ $name }}</td>
+                      <td>{{ $price}}</td>
+                      <td><div class="card1"><button>加入購物車</button></div></td>
+                      <td>&nbsp;&nbsp;</td>
+                      <td><div class="card2"><button>新增我的最愛</button></div></td>
+                      <td>&nbsp;&nbsp;</td>
+                    </tr>
+                  </table>
+  
+                  {{/each}}
+                </class>
+              </a>
             </div>
-        </div>
-        </nav>
-        {{/each}}
+          </article>
+        
+        
+        </section><!-- container -->
       </article>
       <!-- End main Content -->
 
