@@ -5,7 +5,7 @@
     <!-- 頁面title
   ================================================== -->
     <meta charset="utf-8">
-    <title>會員登入</title>
+    <title>新增菜單</title>
 
     <!-- 響應式
   ================================================== -->
@@ -49,7 +49,19 @@
           </h1>
           <!--logo-->
         </hgroup>
-       
+        <nav id="main-nav" class="two-third thirds column omega">
+          <ul id="main-nav-menu" class="nav-menu">
+            <li id="menu-item-1">
+              <a href="Shopmain.html">訂單</a>
+            </li>
+            <li id="menu-item-2">
+              <a href="Shopmenu.html">菜單</a>
+            </li>
+            <li id="menu-item-3">
+              <a href="login.html">會員登出</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -57,7 +69,7 @@
 
 
       <article class="ten columns main-content">
-        <h1>把您喜愛的美食外送給您</h1>
+        <h1>增加新的菜色</h1>
 
         <div id="message"></div>
 
@@ -68,26 +80,18 @@
             <legend>請填入以下資料</legend>
 
             <br />
-            <label for="subject" accesskey="S"><li>登入身分</li></label>
-            <select name="subject" id="subject" required>
-              <option value="customer">客人</option>
-              <option value="owner">店家</option>
-            </select>
-
-            <br />
             <label for="email" accesskey="E"><span class="required"></span>
-              <li>學號</li></label>
-            <input name="account" type="text" placeholder="請輸入學號" id="account" size="30" value="" required/>
+              <li>名稱</li></label>
+            <input name="account" type="text" placeholder="請輸入菜名" id="account" size="30" value="" required/>
 
             <br />
             <label for="password" accesskey="P"><span class="required"></span>
-              <li>密碼</li></label>
+              <li>價錢</li></label>
             <input name="password" type="password" placeholder="請輸入密碼" id="password" size="30" value="" required />
 
             <br />
-            <button type="submit" class="rebtn">登入</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="button" class="rebtn" onclick="location.href='register.html'">註冊</button>
+            <button type="submit" class="rebtn">新增</button>
+ 
           </fieldset>
 
         </form>
