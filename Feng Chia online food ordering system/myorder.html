@@ -77,22 +77,28 @@
         <article id="photo-item-1" class="feature-column one-third column">
           <div class="featured-image img-wrapper">
             <a>
-              <class id="scale-with-grid" alt="Random Iceberg Photo">
-                {{each Comments}}
-                <table width="600" id="main-nav3">
-                  <tr class="card">
-                    <td>{{ $number }}</td>
-                    <td>{{ $name }}</td>
-                    <td>{{ $price}}</td>
-                    <td><div class="card1"><button>修改</button></div></td>
-                    <td>&nbsp;&nbsp;</td>
-                    <td><div class="card2"><button>移除</button></div></td>
-                    <td>&nbsp;&nbsp;</td>
-                  </tr>
-                </table>
-
-                {{/each}}
-              </class>
+            <class id="scale-with-grid" alt="Random Iceberg Photo"/>
+              {{each Comments}}
+              <table width="800" id="main-nav3">
+                <tr class="card">
+                  <td>{{ $number }}</td>
+                  <td>{{ $name }}</td>
+                  <td>
+                  <div class="quantity"></div>
+                  <div>
+                    <input type="text" name="name">
+                  </div>
+                </td>
+                  <td>{{ $price}}</td>
+                  <td><input type="button" value="修改"></td>
+                  <td ><input type="button" value="移除"></td>
+                </tr>
+                
+              </table>
+              
+              {{/each}}
+              <br>
+              <input type="button" class="rebtn" value="新增" onclick="location.href='Add.html'" style="width:120px;height:40px;font-size:20px;">
             </a>
           </div>
         </article>
