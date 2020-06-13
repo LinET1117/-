@@ -85,7 +85,7 @@
               <a>
                 <class id="scale-with-grid" alt="Random Iceberg Photo">
                   {{each Comments}}
-                  <table width="600" id="main-nav3">
+                  <table width="400" id="main-nav3">
                     <tr class="card">
                       <td>{{ $name }}</td>
                       <td>{{ $price}}</td>
@@ -106,20 +106,25 @@
       <!-- End main Content -->
 
 
-      <aside class="six columns right-sidebar">
+      <aside class="feature-column one-third column">
 
-        <div class="sidebar-widget social">
-          <h2>排行榜</h2>
-        </div>
+        <div class="feature-column one-third column">
+          <h3>排行榜</h3>
+          <class id="scale-with-grid" alt="Random Iceberg Photo"/>
+          {{each Comments}}
+          <table width="600" id="main-nav3">
+            <tr class="card">
+              <td width="100">{{ $number }}</td>
+              <td width="100">{{ $name }}</td>
+              <td width="100">{{ $price}}</td>
+              <td width="250"><div class="card1"><button>加入購物車</button></div></td>
+              <td width="300"><div class="card2"><button>新增我的最愛</button></div></td>
+            </tr>
+            
+          </table>
           
-          <div class="sidebar-widget">
-          <h2>Some links</h2>
-          <ul>
-          <li><a href="#">排行1</a></li>
-          <li><a href="#">排行2</a></li>
-          <li><a href="#">排行3</a></li>
-          </ul>
-          </div>
+          {{/each}}
+        </class>
 
       </aside>
       <!-- End Right Sidebar -->
